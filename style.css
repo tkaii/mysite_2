@@ -149,6 +149,10 @@ nav a:focus {
   justify-content: flex-end;
 }
 
+.img-lg svg {
+  display: none;
+  
+}
 
 footer {
   padding: 2em 1em;
@@ -180,7 +184,7 @@ footer a {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .logo {
     font-size: 2.3rem;
   }
@@ -190,12 +194,15 @@ footer a {
   nav ul li {
     padding: 0 2rem;
   }
+  .img-sm img {
+    display: none;
+  }
+  .img-lg svg {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-nav a {
-  display: inline-block;
-  padding: .5em;
-}
 
 
 
