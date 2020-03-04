@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Lora&display=swap');
+
+
+
+:root {
+
+  --ff-title:'Lato', sans-serif;
+  --ff-body:'Lato', sans-serif;
+  --ff-logo:'Lora', serif;
+
+  --clr-primary:#9B5982;
+  --clr-light:#f1c7e3;
+  --clr-dark:#94577D;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--ff-body);
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color:var(--clr-primary);
+}
+
+section {
+  margin: 3rem auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,p {
+  margin: .5rem ;
+}
+
+h1,h2,h3 {
+  font-family: var(--ff-title);
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: .9rem;
+}
+
+p {
+  font-family: var(--ff-body);
+  margin: 1rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color:var(--clr-primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color:var(--clr-dark);
+  text-decoration: underline;
+}
+
+
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  color: white;
+  text-decoration: none;
+  border-radius: .35em;
+}
+
+.btn-pink {
+  background: var(--clr-dark);
+}
+
+
+.logo {
+  margin: 1.5rem;
+  color: var(--clr-dark);
+  font-size: 1.7rem;
+  font-family: var(--ff-logo);
+  font-weight: 500;
+}
+
+ 
+header {
+  padding: 1em .2em;
+  margin: .5rem auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: .5em;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.self-intor .btn {
+  margin-top: 1.5rem;
+}
+
+.img-wrapper {
+  margin: 4rem auto;
+}
+
+.img-wrapper h2 {
+  font-size: .9rem;
+  margin: 2.5rem;
+}
+
+.img-wrapper img {
+  margin: 0 2rem;
+  margin-left: auto;
+  max-height: 70vh;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+footer {
+  padding: 2em 1em;
+  color:rgb(194, 151, 179);
+}
+
+footer a {
+  color:inherit;
+}
+
+.footer-nav,
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-items,
+.footer-social-items {
+  margin: 1rem auto;
+  padding: 0;
+  display: flex;
+}
+.footer-nav-items a,
+.footer-social-items a {
+  padding: 0 1rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
