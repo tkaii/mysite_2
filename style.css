@@ -183,8 +183,7 @@ footer a {
   text-decoration: underline;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .logo {
     font-size: 2.3rem;
   }
