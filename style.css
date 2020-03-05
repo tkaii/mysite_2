@@ -42,7 +42,7 @@ img {
 }
 
 h1,h2,h3,h4,p {
-  margin: .5rem ;
+  margin: .5rem 4rem;
 }
 
 h1,h2,h3 {
@@ -202,8 +202,46 @@ footer a {
   }
 }
 
+.signup-form {
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
+label,input {
+  padding: .7rem;
+  margin: 0;
+}
 
+input,textarea {
+  width: 70vw;
+  border: 1px solid var(--clr-light);
+}
 
+textarea {
+  height: 8rem;
+}
+
+.form__label {
+  display: flex;
+}
+
+.submit {
+  display: inline-block;
+  width: 30vw;
+  margin: 1.5rem 0;
+  padding: .5rem;
+}
+
+.japanese {
+  margin: 0 3rem;
+}
+
+@media (min-width: 576px){
+  .submit {
+    width: 15vw;
+  }
+}
 
 
