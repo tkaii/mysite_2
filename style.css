@@ -2,12 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Lora&display=swap');
 
-
-
 :root {
 
-  --ff-title:'Lato', sans-serif;
-  --ff-body:'Lato', sans-serif;
+  --ff-title:'ヒラギノ丸ゴ', sans-serif;
+  --ff-body:'ヒラギノ丸ゴ', sans-serif;
   --ff-logo:'Lora', serif;
 
   --clr-primary:#9B5982;
@@ -42,7 +40,7 @@ img {
 }
 
 h1,h2,h3,h4,p {
-  margin: .5rem 4rem;
+  margin: 1.5rem .3rem;
 }
 
 h1,h2,h3 {
@@ -79,12 +77,10 @@ a:focus {
   text-decoration: underline;
 }
 
-
-
 .btn {
   position: relative;
   display: inline-block;
-  padding: 0.25em 0.5em;
+  padding: 1em 1.3em;
   color: white;
   text-decoration: none;
   border-radius: .35em;
@@ -94,7 +90,6 @@ a:focus {
   background: var(--clr-dark);
 }
 
-
 .logo {
   margin: 1.5rem;
   color: var(--clr-dark);
@@ -103,7 +98,8 @@ a:focus {
   font-weight: 500;
 }
 
- 
+/*  ホームページ  */
+
 header {
   padding: 1em .2em;
   margin: .5rem auto;
@@ -125,6 +121,11 @@ nav a {
 nav a:hover,
 nav a:focus {
   text-decoration: underline;
+}
+
+.self-intor {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .self-intor .btn {
@@ -151,7 +152,16 @@ nav a:focus {
 
 .img-lg svg {
   display: none;
-  
+}
+
+.img-lg svg .cls-1 {
+  fill: none;
+  stroke: #c78ab4;
+  stroke-width: 3px;
+}
+
+.img-lg svg .cls-2 {
+  fill: #c78ab4;
 }
 
 footer {
@@ -202,6 +212,8 @@ footer a {
   }
 }
 
+/*  コンタクトページ  */
+
 .signup-form {
   margin: 2rem auto;
   padding: 1rem;
@@ -234,7 +246,7 @@ textarea {
   padding: .5rem;
 }
 
-.japanese {
+.form-title-text {
   margin: 0 3rem;
 }
 
@@ -244,4 +256,12 @@ textarea {
   }
 }
 
-
+@media (max-width: 370px) {
+  .self-intor p {
+    font-size: .9rem;
+  }
+  .self-intor h1 {
+    font-size: 1.5rem;
+  }
+  
+}
