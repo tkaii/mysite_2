@@ -277,8 +277,9 @@ textarea {
 .blog-content__tag
 ul {
   margin: 0;
-  padding: 0;
+  padding: 0 0 1rem 0;
   list-style: none;
+  display: flex;
 }
 .blog-content__tag
 ul li {
@@ -291,33 +292,35 @@ ul li a {
   position: relative;
   display: inline-block;
   max-width: 100px;
-  height: 28px;
-  line-height: 28px;
-  padding: 0 2.5em 0 1em;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 2em 0 .9em;
   background-color: #9B5982;
   border-radius: 3px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   color: #F7F2F3;
-  font-size: 13px;
+  font-size: 11px;
   text-decoration: none;
   -webkit-transition: .2s;
   transition: .2s;
 }
 .blog-content__tag
 li span {
+  display: inline-block;
+  margin-left: 1rem;
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 2px;
+  right: 2px;
   z-index: 2;
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   background-color: #3498db;
   border-radius: 100%;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   -webkit-transition: .2s;
   transition: .2s;
