@@ -139,16 +139,8 @@ nav a:focus {
 }
 
 .img-wrapper img {
-  margin-right:1rem;
-  margin-left: auto;
   max-height: 70vh;
   width: 70%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.img-lg svg {
-  display: none;
 }
 
 .img-lg svg .cls-1 {
@@ -201,13 +193,6 @@ footer a {
   }
   nav ul li {
     padding: 0 2rem;
-  }
-  .img-sm img {
-    display: none;
-  }
-  .img-lg svg {
-    display: block;
-    margin: 0 auto;
   }
 }
 
@@ -282,25 +267,70 @@ textarea {
 
 /*  ブログ・コンテンツ  */
 .blog-content {
-  background: #E7FAEC;
+  background: #F7F2F3;
   padding: 5% 11%;
   margin: 8%;
   display: flex;
   flex-direction: column;
   border-radius: .5rem;
 }
-
-.blog-content__tag {
-  font-size: .9rem;
-  padding: .6rem;
-  border-radius: .3rem;
-  width: 30%;
-  background: #C78AB4;
-  margin: 1.5rem 0;
+.blog-content__tag
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.blog-content__tag a {
-  color: #E7FAEC;
+.blog-content__tag
+ul li {
+  display: inline-block;
+  margin: 0 .3em .3em 0;
+  padding: 0;
+}
+.blog-content__tag
+ul li a {
+  position: relative;
+  display: inline-block;
+  max-width: 100px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 2.5em 0 1em;
+  background-color: #9B5982;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #F7F2F3;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.blog-content__tag
+li span {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #3498db;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.blog-content__tag
+ul li a:hover {
+  background-color: #f1c7e3;
+  color: #fff;
+}
+.blog-content__tag
+ul li a:hover span {
+  background-color: #fff;
+  color: #3498db;
 }
 
 .blog-content__title {
@@ -342,12 +372,12 @@ textarea {
   .blog-content {
     padding: 6% 4%;
   }
-
+/*
   .blog-content__tag {
     font-size: 1.2rem;
     padding: .8rem;
   }
-  
+ */ 
   .blog-article {
   font-size: 1rem;
   }
